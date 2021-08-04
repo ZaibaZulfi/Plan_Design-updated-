@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <COMReference Include="AutoItX3Lib">
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>f8937e53-d444-4e71-9275-35b64210cc3b</Guid>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Akka" Version="1.4.21" />
+    <PackageReference Include="angular-protractor.TypeScript.DefinitelyTyped" Version="2.8.4" />
+    <PackageReference Include="AutoItX.Dotnet" Version="3.3.14.5" />
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.0.34" />
+    <PackageReference Include="Chromium.ChromeDriver" Version="2.37.0" />
+    <PackageReference Include="Docker.DotNet" Version="3.125.4" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.13.0" />
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.1.0" />
+    <PackageReference Include="FakeItEasy" Version="7.0.2" />
+    <PackageReference Include="FluentAssertions" Version="6.0.0-alpha0001" />
+    <PackageReference Include="FsCheck" Version="3.0.0-alpha1" />
+    <PackageReference Include="Google.Apis.Gmail.v1" Version="1.52.0.2356" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.10.0" />
+    <PackageReference Include="Microsoft.TestPlatform.TestHost" Version="16.10.0" />
+    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="NUnit.Console" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
+    <PackageReference Include="PlaywrightSharp" Version="0.192.0" />
+    <PackageReference Include="Protractor" Version="0.13.0" />
+    <PackageReference Include="ProtractorTestAdapter" Version="1.0.0.13" />
+    <PackageReference Include="SafetyNet.UIMaps.ChromeDriver" Version="91.0.4472.19" />
+    <PackageReference Include="Selenium.Chrome.WebDriver" Version="85.0.0" />
+    <PackageReference Include="Selenium.Essentials" Version="1.0.3.1" />
+    <PackageReference Include="Selenium.Firefox.WebDriver" Version="0.27.0" />
+    <PackageReference Include="Selenium.InternetExplorer.WebDriver" Version="3.150.1" />
+    <PackageReference Include="Selenium.Support" Version="4.0.0-alpha01" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.0.0-alpha01" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="91.0.4472.10100" />
+    <PackageReference Include="Selenium.WebDriver.Extensions" Version="3.3.0" />
+    <PackageReference Include="Selenium.WebDriver.GeckoDriver.Win32" Version="0.29.1" />
+    <PackageReference Include="SeleniumWebDrivers" Version="1.0.0.4" />
+    <PackageReference Include="Specflow" Version="3.9.2-beta" />
+    <PackageReference Include="Specflow.NUnit" Version="3.8.14" />
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.8.14" />
+    <PackageReference Include="UITest.ChromeDriver" Version="1.33.0" />
+    <PackageReference Include="Uno.UITest.Selenium" Version="1.1.0-dev.11" />
+    <PackageReference Include="WebDriver.ChromeDriver" Version="26.14.313457.1" />
+    <PackageReference Include="WebDriver.ChromeDriver.win32" Version="90.0.4430.24" />
+    <PackageReference Include="WebDriver.ChromeDriver.win32-2.36" Version="2.36.0" />
+    <PackageReference Include="WebDriverChromeDriver" Version="2.10.0" />
+    <PackageReference Include="WebDriverManager" Version="2.11.1" />
+  </ItemGroup>
+
+</Project>
