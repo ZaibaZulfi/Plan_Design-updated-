@@ -100,11 +100,19 @@ namespace Plan_Design.Steps
         {
             PropertiesCollection.ngdriver.FindElement(By.XPath("(//input[@type='submit'])[6]")).Click();
         }
+      
         //Previous Method
         public static void Btn_Prev()
         {
             PropertiesCollection.ngdriver.FindElement(By.XPath("(//input[@type='submit'])[5]")).Click();
         }
-
+        public static void Btn_Next_RFP()
+        {
+            PropertiesCollection.ngdriver.FindElement(By.XPath("(//input[@class='btn btn-primary'])")).Click();
+        }
+        public static void Btn_Save_RFP()
+        {
+            PropertiesCollection.ngdriver.FindElement(By.XPath("(//a[@class='btn btn-primary'])[6]")).Click();
+        }
     }
 }

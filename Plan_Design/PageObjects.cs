@@ -85,6 +85,33 @@ namespace Plan_Design.Steps
             string Processed_Status_File = "(//i[@class='fa fa-download fa-mx'])[7]";//(case 86 XPATH for Processed_Status_File)
             string Processed_View_Detail = "(//i[@class='fa fa-arrow-circle-right fa-2x'])[3]";//(case 87 XPATH for Processed file _View_Detail)
             string Account_Name_Processed_File = "//a[@id='ctl00_cphMain_grdMGUUploads_ctl02_lnkButton']";//(case 88 XPATH for Account_Name_Processed_File)
+            string RFP = "//a[@id='ctl00_MenuControl_hlSubmission']";//(case 89 XPATH for clicking on New RFP button)
+            string Proposed_Due_Date = "(//i[@class='fa fa-calendar'])[3]";//(case 90 XPATH for click on Proposed Due Date)
+            string P_Due_Date_Today = "(//th[@class='today'])[1]";//(case 91 XPATH for click on Proposed Due Date==>"Today")
+            string Proposed_Effective_Date = "(//i[@class='fa fa-calendar'])[4]";//(case 92 XPATH for click on Proposed Effective Date)
+            string P_Eff_Date_2020 = "(//th[@class='datepicker-switch'])[1]";//(case 93 XPATH for click on Proposed Effective Date==>ex 'August 2020')
+            string P_Eff_Date_Symbol = "(//th[@class='next'])[2]";//(case 94 XPATH for click on Proposed Effective Date==>ex '>>')
+            string P_Eff_Date_month = "//span[@class='month'][11]";//(case 95 XPATH for click on Proposed Effective Date==>ex 'month')
+            string P_Eff_Date_day = "(//td[@class='day'])[24]";//(case 96 XPATH for click on Proposed Effective Date==>ex 'day')
+            string Producer_Screen = "(//a[@class='btn btn-primary'])[3]";//(case 97 XPATH for  //Account Name / Policyholder Name)
+            string P_Agency = "(//input[@class='input form-control custom-height'])[1]";//(case 98 XPATH for //Agency)
+            string P_Agency_Search = "(//button[@class='btn btn btn-primary'])[1]";//(case 99 XPATH for //Agency search )
+            string P_Agency_Select = "(//a[@class='btn-link'])[2]";//(case 100 XPATH for //Agency==>select agency)
+            string P_Agent = "(//a[@class='btn btn-primary'])[4]";//(case 101 XPATH for   //* Agent)
+            string P_Agent_Search = "(//a[@class='btn-link'])[4]";//(case 102 XPATH for //* Agent search)
+            string Proceed_for_Rating = "(//a[@class='btn btn-primary'])[4]";//(case 103 XPATH for //Proceed for rating)
+            string PD_Next = "(//input[@class='btn btn-primary jqhandlenextbutton'])";//(case 104 XPATH for  //plan Design==>Next)
+            string Hour_24_Coverage = "(//ins[@class='iCheck-helper'])[1]";//(case 105 XPATH for  //24 Hour Coverage)
+            string School_Coverage_RFP = "(//ins[@class='iCheck-helper'])[42]";//(case 106 XPATH for //School Coverage)
+            string SS_Activities = "(//ins[@class='iCheck-helper'])[45]";//(case 107 XPATH for   //Supervised and Sponsored Activities)
+            string sports_coverage = "(//ins[@class='iCheck-helper'])[63]";//(case 108 XPATH for //Sports Coverage
+            string Covered_Activities_RFP = "(//ins[@class='iCheck-helper'])[154]";//(case 109 XPATH for   //Class 1 - Covered Activities)
+            string Additional_Benefit = "//a[@onclick='return CheckUnCheckGrid1(1);']";//(case 110 XPATH for   //Additional Benefit Checklist for Class 1)
+            string Experience_Rater = "//input[@class='btn btn-warning']";//(case 111 XPATH for  //Experience Rating)
+            string Rating_Method = "(//ins[@class='iCheck-helper'])[2]";//(case 112 XPATH for  //Rating Method selected)
+            string Generate_Proposal = "(//ins[@class='iCheck-helper'])[2]";//(case 113 XPATH for   //Generate Proposal)
+            string GP_Finish = "(//input[@class='btn btn-primary jqFinish'])";//(case 114 XPATH for //Generate Proposal==>Finish)
+
             switch (which_object)
             {
                 
@@ -295,8 +322,84 @@ namespace Plan_Design.Steps
                 case 88:
                     required_object = Account_Name_Processed_File;
                     break;
-
-
+                case 89:
+                    required_object = RFP;
+                    break;
+                case 90:
+                    required_object = Proposed_Due_Date;
+                    break;
+                case 91:
+                    required_object = P_Due_Date_Today;
+                    break;
+                case 92:
+                    required_object = Proposed_Effective_Date;
+                    break;
+                case 93:
+                    required_object = P_Eff_Date_2020;
+                    break;
+                case 94:
+                    required_object = P_Eff_Date_Symbol;
+                    break;
+                case 95:
+                    required_object = P_Eff_Date_month;
+                    break;
+                case 96:
+                    required_object = P_Eff_Date_day;
+                    break;
+                case 97:
+                    required_object = Producer_Screen;
+                    break;
+                case 98:
+                    required_object = P_Agency;
+                    break;
+                case 99:
+                    required_object = P_Agency_Search;
+                    break;
+                case 100:
+                    required_object = P_Agency_Select;
+                    break;
+                case 101:
+                    required_object = P_Agent;
+                    break;
+                case 102:
+                    required_object = P_Agent_Search;
+                    break;
+                case 103:
+                    required_object = Proceed_for_Rating;
+                    break;
+                case 104:
+                    required_object = PD_Next;
+                    break;
+                case 105:
+                    required_object = Hour_24_Coverage;
+                    break;
+                case 106:
+                    required_object = School_Coverage_RFP;
+                    break;
+                case 107:
+                    required_object = SS_Activities;
+                    break;
+                case 108:
+                    required_object = sports_coverage;
+                    break;
+                case 109:
+                    required_object = Covered_Activities_RFP;
+                    break;
+                case 110:
+                    required_object = Additional_Benefit;
+                    break;
+                case 111:
+                    required_object = Experience_Rater;
+                    break;
+                case 112:
+                    required_object = Rating_Method;
+                    break;
+                case 113:
+                    required_object = Generate_Proposal;
+                    break;
+                case 114:
+                    required_object = GP_Finish;
+                    break;
 
 
             }
