@@ -858,12 +858,15 @@ namespace Plan_Design.Steps
             CustomControls.Wait();
             CustomControls.click(PageObjects.Login_Screen(113), propertytype.XPath);
         }
-        [When(@"User Clicks on Finish")]
-        public void WhenUserClicksOnFinish()
+
+        [When(@"User Clicks on Finish\.")]
+        public void WhenUserClicksOnFinish_()
         {
             CustomControls.Wait();
             CustomControls.click(PageObjects.Login_Screen(114), propertytype.XPath);
         }
+
+    
         [Then(@"User should be on ""(.*)""")]
         public void ThenUserShouldBeOn(string home)
         {

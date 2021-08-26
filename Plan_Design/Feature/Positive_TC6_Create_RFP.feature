@@ -83,5 +83,5 @@ Scenario: Create an RFP for product PAI
 	When User Clicks on AC Next button
 	Then User should be on Generate Proposal
 	And User Clicks on Generate Proposal 
-	When User Clicks on Finish 
+	When User Clicks on Finish.
 	Then User should be on "Dashboard"
